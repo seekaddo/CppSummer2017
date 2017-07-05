@@ -8,7 +8,10 @@
 #include <iomanip>
 #include "libgrades.h"
 
-
+/**\brief
+ *
+ * @param   stud
+ * */
 static inline bool is_Pass(const Student_info stdnt) {
 
     return do_grades(stdnt.projktSumme) != 5;

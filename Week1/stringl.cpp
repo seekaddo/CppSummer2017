@@ -14,16 +14,16 @@ using std::endl;
 using std::string;
 
 
-bool is_palindrome(const string& str){
+static inline bool is_palindrome(const string& str){
 
     return std::equal(str.begin(),str.end(),str.rbegin());  //remove_copy_if remove_copy
 }
 
-bool smallLen(const int& s){
+static inline bool smallLen(const int& s){
     return (s %2 == 0);
 }
 
-bool smallnum(const int& s){
+static inline bool smallnum(const int& s){
     return s > 5;
 }
 
@@ -33,7 +33,7 @@ bool smallnum(const int& s){
 int main() {
 
 
-    string s = "eye9";
+    const string s = "eye9";
 
     cout << is_palindrome(s) << '\n' <<endl;
 
@@ -74,7 +74,7 @@ int main() {
     std::vector<int> b;
 
 
-    std::remove_copy_if(n.begin(),n.end(),back_inserter(b),smallnum); // don't store return value if you use back_inserter
+    std::remove_copy_if(n.begin(),n.end(),back_inserter(b),smallnum);
 
 
     cout << "big numbers" <<endl;
