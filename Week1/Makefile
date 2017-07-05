@@ -2,7 +2,7 @@
 ## @file Makefile
 ##
 ## @author Dennis Addo <ic16b026@technikum-wien.at> (tdxxx)
-## @date 2017/07/15
+## @date 05/07/2017
 ##
 ## @version 0.1 $
 ##
