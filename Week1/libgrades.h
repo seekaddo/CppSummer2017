@@ -30,7 +30,7 @@ struct Student_info {
     std::string id;
     std::vector<Projects> projt;
     double projktSumme;
-    size_t grade;
+    std::size_t grade;
 };
 
 
@@ -38,7 +38,7 @@ int calculateGrades(std::vector<Student_info> &stud);
 
 double getProjktSumme(const std::vector<Projects> &bspl);
 
-size_t do_grades(const double pnkt);
+std::size_t do_grades(const double pnkt);
 
 std::vector<Student_info> get_PassStudents(const std::vector<Student_info> &students);
 

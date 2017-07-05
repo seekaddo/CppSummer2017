@@ -50,7 +50,7 @@ int calculateGrades(std::vector<Student_info> &stud) {
  * */
 double getProjktSumme(const std::vector<Projects> &bspl) {
 
-    static size_t size;
+    static std::size_t size;
 
     if (bspl.empty()) {
         std::cerr << "Sorry Student has no Beispiel records" << std::endl;
@@ -80,7 +80,7 @@ double getProjktSumme(const std::vector<Projects> &bspl) {
  *
  * @param   pnkt
  * */
-size_t do_grades(const double pnkt) {
+std::size_t do_grades(const double pnkt) {
 
 
     if (pnkt >= 88 && pnkt <= 100) {
