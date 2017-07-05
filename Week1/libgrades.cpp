@@ -1,6 +1,13 @@
-//
-// Created by Addo Dennis on 05/07/2017.
-//
+/* =============================================================================== */
+/* CPP Programming (Summer2017)                                                    */
+/* Created by Addo Dennis on 05/07/2017.                                           */
+/* =============================================================================== */
+/* Header file for the grades.c. All the definition her                            */
+/*                                                                                 */
+/* Tested with g++ 6.3.0 , You can use clang++                                     */
+/* =============================================================================== */
+/* Author: Dennis Addo                                                             */
+/* =============================================================================== */
 
 #include <vector>
 #include <algorithm>
@@ -8,10 +15,7 @@
 #include <iomanip>
 #include "libgrades.h"
 
-/**\brief
- *
- * @param   stud
- * */
+
 static inline bool is_Pass(const Student_info stdnt) {
 
     return do_grades(stdnt.projktSumme) != 5;
