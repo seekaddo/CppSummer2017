@@ -13,10 +13,10 @@ using std::cin;
 using std::endl;
 using std::string;
 
-
+// Just testing Palindrome here. quick and simple
 static inline bool is_palindrome(const string& str){
 
-    return std::equal(str.begin(),str.end(),str.rbegin());  //remove_copy_if remove_copy
+    return std::equal(str.begin(),str.end(),str.rbegin()); 
 }
 
 static inline bool smallLen(const int& s){
