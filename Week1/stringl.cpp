@@ -35,8 +35,7 @@ int main() {
 
     const string s = "eye9";
 
-    cout << is_palindrome(s) << '\n' <<endl;
-
+    cout << "The string: "+ s + (is_palindrome(s)?" is a palindrome":" is not palindrome") << '\n' <<endl;
 
     //std::vector<string> words = {"food","girls", "cat","dogs","mi","ku","y"};
     std::vector<int> nums = {3,4,6,7,8,2,9,13,45,87};
