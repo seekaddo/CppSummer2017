@@ -51,7 +51,7 @@
 using namespace std;
 
 
-int main() {
+int main(void) {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */
     
     int n, nq ,s , v ;
