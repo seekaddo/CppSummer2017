@@ -65,7 +65,7 @@ class Professor : public Person { //1
     
 public:
     int publications, id;
-    static int cur_id;
+    inline static int cur_id = 0; // only in c++11 upwards
     
     
     void getdata() override {
@@ -81,12 +81,11 @@ public:
     
 };
 
-int Professor::cur_id = 0;
 
 class Student : public Person { //2
     
 public:
-    static int cur_id;
+    inline static int cur_id = 0; // only in c++11 upwards
     int marks[6];
     int id, sum = 0;
     
@@ -106,4 +105,3 @@ public:
     
 };
 
-int Student::cur_id = 0;
