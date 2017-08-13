@@ -23,7 +23,7 @@ using std::string;
 
 bool is_palindrome(const string& str){
 
-    return std::equal(str.begin(),str.end(),str.rbegin());  //remove_copy_if remove_copy
+    return std::equal(str.begin(),str.begin()+str.size()/2,str.rbegin());  //remove_copy_if remove_copy
 }
 
 bool evenNum(const int &s){
